@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include android:layout_width="match_parent" android:layout_height="wrap_content" layout="@layout/toolbar">
+    </include>
+    <ScrollView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="78dp" app:layout_behavior="@string/appbar_scrolling_view_behavior">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <RelativeLayout android:orientation="vertical" android:background="@color/lightgrey" android:paddingLeft="@dimen/activity_horizontal_margin" android:paddingTop="@dimen/activity_vertical_margin" android:paddingRight="@dimen/activity_horizontal_margin" android:paddingBottom="@dimen/activity_vertical_margin" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="16dp">
+                <RelativeLayout android:id="@id/ean_prodotto_wrapper" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <android.support.design.widget.TextInputLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:textAllCaps="false">
+                        <EditText android:id="@id/ean_prodotto" android:hint="@string/ean_prodotto" android:textAllCaps="true" style="@style/EditText">
+                        </EditText>
+                    </android.support.design.widget.TextInputLayout>
+                    <ImageView android:id="@id/ean_clear_button" android:padding="6dp" android:visibility="invisible" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:tint="#ffbbbbbb" android:layout_centerVertical="true" android:layout_alignParentEnd="true" app:srcCompat="@drawable/ic_clear_black_24dp">
+                    </ImageView>
+                </RelativeLayout>
+                <android.support.design.widget.TextInputLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@id/ean_prodotto_wrapper" android:textAllCaps="false">
+                    <EditText android:id="@id/ean_ubicazione" android:hint="@string/ean_ubicazione" android:textAllCaps="true" style="@style/EditText">
+                    </EditText>
+                </android.support.design.widget.TextInputLayout>
+            </RelativeLayout>
+            <ProgressBar android:id="@id/progress" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="40dp" style="?android:attr/progressBarStyle">
+            </ProgressBar>
+            <LinearLayout android:orientation="vertical" android:id="@id/ean_info" android:paddingLeft="@dimen/activity_horizontal_margin" android:paddingTop="@dimen/activity_vertical_margin" android:paddingRight="@dimen/activity_horizontal_margin" android:paddingBottom="@dimen/activity_vertical_margin" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textStyle="bold" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="4dp" android:text="@string/prodotto" android:textAllCaps="true" android:textAlignment="center">
+                </TextView>
+                <TextView android:textColor="@android:color/holo_green_dark" android:id="@id/descrizione" android:background="@drawable/rectangle" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="16dp" android:textAllCaps="true" android:textAlignment="center">
+                </TextView>
+                <TextView android:textStyle="bold" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="4dp" android:text="@string/ultima_ubicazione" android:textAllCaps="true" android:textAlignment="center">
+                </TextView>
+                <TextView android:textColor="@android:color/holo_green_dark" android:id="@id/ultima_ubicazione" android:background="@drawable/rectangle" android:layout_width="match_parent" android:layout_height="wrap_content" android:textAlignment="center">
+                </TextView>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+    <Button android:layout_gravity="bottom|end" android:id="@id/btn_assegna" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/activity_horizontal_margin" android:layout_marginRight="@dimen/activity_horizontal_margin" android:layout_marginBottom="@dimen/activity_vertical_margin" android:text="@string/assegna_ubicazione" style="@style/AppTheme.Button.Primary">
+    </Button>
+</android.support.design.widget.CoordinatorLayout>

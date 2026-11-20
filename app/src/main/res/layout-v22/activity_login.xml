@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:gravity="center" android:layout_gravity="center_vertical|fill_horizontal" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ProgressBar android:layout_gravity="center" android:id="@id/login_progress" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="8dp" style="?android:attr/progressBarStyleLarge">
+    </ProgressBar>
+    <ScrollView android:id="@id/login_form" android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/email_login_form" android:paddingLeft="@dimen/activity_horizontal_margin" android:paddingTop="@dimen/activity_vertical_margin" android:paddingRight="@dimen/activity_horizontal_margin" android:paddingBottom="32dp" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="24dp">
+            <ImageView android:layout_gravity="center" android:id="@id/imageView" android:layout_width="200dp" android:layout_height="wrap_content" android:layout_marginBottom="30dp" android:cropToPadding="false" android:contentDescription="TODO" app:srcCompat="@drawable/logo" style="@style/Logo">
+            </ImageView>
+            <android.support.design.widget.TextInputLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+                <EditText android:id="@id/codice_licenza" android:hint="@string/codice_licenza" android:textAllCaps="true" style="@style/EditText">
+                </EditText>
+            </android.support.design.widget.TextInputLayout>
+            <android.support.design.widget.TextInputLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+                <EditText android:id="@id/username" android:hint="@string/nome_utente" android:autofillHints="" style="@style/EditText">
+                </EditText>
+            </android.support.design.widget.TextInputLayout>
+            <android.support.design.widget.TextInputLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+                <EditText android:id="@id/password" android:hint="@string/prompt_password" android:inputType="textEmailAddress" android:imeOptions="normal" android:imeActionLabel="@string/action_login" android:imeActionId="6" android:autofillHints="" style="@style/EditText">
+                </EditText>
+            </android.support.design.widget.TextInputLayout>
+            <!-- TODO: [TEST V2] Rimuovere blocco URL personalizzato al termine dei test v2 -->
+            <android.support.v7.widget.SwitchCompat android:id="@id/custom_url_switch" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:layout_marginBottom="4dp" android:text="@string/usa_url_personalizzato" android:textColor="#444444" android:textSize="13sp">
+            </android.support.v7.widget.SwitchCompat>
+            <android.support.design.widget.TextInputLayout android:id="@id/custom_url_layout" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <EditText android:id="@id/custom_url" android:hint="@string/hint_url_personalizzato" android:inputType="textUri" style="@style/EditText">
+                </EditText>
+            </android.support.design.widget.TextInputLayout>
+            <Button android:id="@id/login_button" android:layout_width="match_parent" android:text="@string/action_login" style="@style/AppTheme.Button.Primary">
+            </Button>
+            <TextView android:textSize="12sp" android:textStyle="bold" android:textColor="#444444" android:id="@id/versioneTextView" android:layout_width="match_parent" android:layout_height="wrap_content" android:textAlignment="center">
+            </TextView>
+            <TextView android:textSize="12sp" android:textStyle="bold" android:textColor="#444444" android:id="@id/deviceTextView" android:layout_width="match_parent" android:layout_height="wrap_content" android:textAlignment="center">
+            </TextView>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

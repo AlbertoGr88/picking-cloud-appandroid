@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@id/impostazioniLayout" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include android:layout_width="match_parent" android:layout_height="wrap_content" layout="@layout/toolbar">
+    </include>
+    <fragment android:name="cloud.picking.app.pickingcloud.fragments.ImpostazioniFragment" android:id="@id/impostazioniFragmentContainer" android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_behavior="@string/appbar_scrolling_view_behavior">
+    </fragment>
+</android.support.design.widget.CoordinatorLayout>

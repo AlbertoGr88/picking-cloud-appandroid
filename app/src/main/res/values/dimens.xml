@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="fastscroll_default_thickness">8dp</dimen>
+    <dimen name="fastscroll_margin">0dp</dimen>
+    <dimen name="fastscroll_minimum_range">50dp</dimen>
+    <dimen name="item_touch_helper_max_drag_scroll_per_frame">20dp</dimen>
+    <dimen name="item_touch_helper_swipe_escape_max_velocity">800dp</dimen>
+    <dimen name="item_touch_helper_swipe_escape_velocity">120dp</dimen>
+    <dimen name="nav_header_height">86dp</dimen>
+    <dimen name="nav_header_vertical_spacing">8dp</dimen>
+    <dimen name="photo_crop_stroke_width">1dp</dimen>
+    <dimen name="photo_crop_width">280dp</dimen>
+    <dimen name="photo_preview_size">200dp</dimen>
+    <dimen name="text_margin">16dp</dimen>
+    <dimen name="pick_riga_min_height">36dp</dimen>
+    <dimen name="pick_riga_padding_v">4dp</dimen>
+    <dimen name="pick_qty_margin_top">2dp</dimen>
+    <dimen name="pick_pm_btn_min_height">48dp</dimen>
+    <dimen name="pick_pm_btn_padding_v">8dp</dimen>
+    <dimen name="pick_nav_btn_min_height">48dp</dimen>
+    <dimen name="pick_nav_btn_padding_v">12dp</dimen>
+</resources>

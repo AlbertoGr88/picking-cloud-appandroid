@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="cloud.picking.app.pickingcloud">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:hardwareAccelerated="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
+
+        <activity
+            android:name="cloud.picking.app.pickingcloud.activity.SplashActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/SplashTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="cloud.picking.app.pickingcloud.activity.LoginActivity"
+            android:screenOrientation="portrait" />
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+
+        <activity
+            android:name="cloud.picking.app.pickingcloud.activity.MainActivity"
+            android:label="@string/app_name"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="cloud.picking.app.pickingcloud.activity.SyncActivity"
+            android:label="@string/sincronizzazione"
+            android:parentActivityName="cloud.picking.app.pickingcloud.activity.MainActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="cloud.picking.app.pickingcloud.activity.UbicazioneActivity"
+            android:label="@string/ubicazione"
+            android:parentActivityName="cloud.picking.app.pickingcloud.activity.MainActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="cloud.picking.app.pickingcloud.activity.OrdiniActivity"
+            android:label="@string/ordini"
+            android:launchMode="singleTask"
+            android:parentActivityName="cloud.picking.app.pickingcloud.activity.MainActivity"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.app.searchable"
+                android:resource="@xml/searchable" />
+            <intent-filter>
+                <action android:name="android.intent.action.SEARCH" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="cloud.picking.app.pickingcloud.activity.ListeActivity"
+            android:label="@string/liste_prodotti"
+            android:launchMode="singleTask"
+            android:parentActivityName="cloud.picking.app.pickingcloud.activity.MainActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="cloud.picking.app.pickingcloud.activity.PickingActivity"
+            android:label="@string/prodotti"
+            android:parentActivityName="cloud.picking.app.pickingcloud.activity.OrdiniActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize" />
+
+        <activity
+            android:name="cloud.picking.app.pickingcloud.activity.ImpostazioniActivity"
+            android:label="@string/title_activity_settings"
+            android:parentActivityName="cloud.picking.app.pickingcloud.activity.MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="cloud.picking.app.pickingcloud.activity.MainActivity" />
+        </activity>
+
+        <activity
+            android:name="cloud.picking.app.pickingcloud.activity.ProdottiActivity"
+            android:label="@string/title_activity_prodotti"
+            android:parentActivityName="cloud.picking.app.pickingcloud.activity.MainActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="cloud.picking.app.pickingcloud.activity.MainActivity" />
+        </activity>
+    </application>
+</manifest>

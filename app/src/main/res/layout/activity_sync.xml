@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@id/syncCoordinatorLayout" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include android:layout_width="match_parent" android:layout_height="wrap_content" layout="@layout/toolbar">
+    </include>
+    <ScrollView android:paddingTop="32dp" android:layout_width="match_parent" android:layout_height="match_parent">
+        <RelativeLayout android:id="@id/sync_layout" android:paddingTop="16dp" android:paddingBottom="16dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/activity_horizontal_margin" android:layout_marginRight="@dimen/activity_horizontal_margin" app:layout_behavior="@string/appbar_scrolling_view_behavior">
+            <ImageView android:id="@id/sync_icon" android:layout_width="137dp" android:layout_height="110dp" android:layout_marginTop="20dp" android:layout_marginBottom="20dp" android:adjustViewBounds="true" android:layout_centerHorizontal="true" app:srcCompat="@drawable/ic_sync_black_24dp">
+            </ImageView>
+            <TextView android:id="@id/sync_message" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/descrizione_sincronizzazione" android:layout_below="@id/sync_icon" android:textAlignment="center">
+            </TextView>
+            <Button android:id="@id/sync_button" android:layout_width="match_parent" android:layout_height="wrap_content" android:text=" Sincronizza Tutto" android:layout_below="@id/sync_message" style="@style/AppTheme.Button.Primary">
+            </Button>
+            <Button android:id="@id/sync_orders_button" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="101dp" android:text="Sincronizza Ordini" android:layout_below="@id/sync_message" style="@style/AppTheme.Button.Secondary">
+            </Button>
+            <TextView android:textSize="12sp" android:id="@id/sync_time" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="110dp" android:layout_below="@id/sync_button" android:textAlignment="center">
+            </TextView>
+        </RelativeLayout>
+    </ScrollView>
+    <ProgressBar android:id="@id/progressBar" style="@style/ProgressBar">
+    </ProgressBar>
+</android.support.design.widget.CoordinatorLayout>

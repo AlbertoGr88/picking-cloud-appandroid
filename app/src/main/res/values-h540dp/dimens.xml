@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="pick_riga_min_height">44dp</dimen>
+    <dimen name="pick_riga_padding_v">7dp</dimen>
+    <dimen name="pick_qty_margin_top">8dp</dimen>
+    <dimen name="pick_pm_btn_min_height">62dp</dimen>
+    <dimen name="pick_pm_btn_padding_v">14dp</dimen>
+    <dimen name="pick_nav_btn_min_height">62dp</dimen>
+    <dimen name="pick_nav_btn_padding_v">18dp</dimen>
+</resources>

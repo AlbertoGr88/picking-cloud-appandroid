@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <group android:checkableBehavior="single">
+        <item android:icon="@drawable/ic_place_black_24dp" android:id="@id/nav_ubicazione" android:title="@string/ubicazione">
+        </item>
+        <item android:icon="@drawable/ic_playlist_add_black_24dp" android:id="@id/nav_oridini_coda" android:title="@string/ordini_in_coda">
+        </item>
+        <item android:icon="@drawable/ic_view_list_black_24dp" android:id="@id/nav_prodotti" android:title="@string/prodotti">
+        </item>
+        <item android:icon="@drawable/ic_view_list_black_24dp" android:id="@id/nav_liste" android:title="Liste Prodotti">
+        </item>
+        <item android:icon="@drawable/ic_sync_black_24dp" android:id="@id/nav_sync" android:title="@string/sincronizzazione">
+        </item>
+    </group>
+    <group>
+        <item android:icon="@drawable/ic_settings_black_24dp" android:id="@id/nav_impostazioni" android:title="Impostazioni">
+        </item>
+        <item android:icon="@drawable/ic_exit_to_app_black_24dp" android:id="@id/nav_exit" android:title="@string/esci">
+        </item>
+    </group>
+</menu>

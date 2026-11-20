@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:paddingLeft="16dp" android:paddingTop="16dp" android:paddingRight="16dp" android:paddingBottom="16dp" android:focusable="true" android:visibility="gone" android:clickable="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/activity_horizontal_margin" android:layout_marginTop="8dp" android:layout_marginRight="@dimen/activity_horizontal_margin" android:layout_marginBottom="8dp" android:maxHeight="120dp">
+    <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_alignParentStart="true" android:layout_toStartOf="@id/valore" android:layout_marginEnd="8dp">
+        <TextView android:textSize="16sp" android:id="@id/testo" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textAllCaps="true" android:textAlignment="viewStart">
+        </TextView>
+        <TextView android:textSize="12sp" android:textStyle="bold" android:id="@id/sottotesto" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2dp" android:textColor="#333333" android:textAlignment="viewStart">
+        </TextView>
+    </LinearLayout>
+    <TextView android:textSize="40sp" android:textStyle="bold" android:id="@id/valore" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="--" android:layout_centerInParent="true" android:textAllCaps="true" android:textAlignment="center" android:layout_alignParentEnd="true">
+    </TextView>
+    <ProgressBar android:id="@id/progress" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" android:indeterminateTint="@color/lightgrey" style="?android:attr/progressBarStyle">
+    </ProgressBar>
+</RelativeLayout>

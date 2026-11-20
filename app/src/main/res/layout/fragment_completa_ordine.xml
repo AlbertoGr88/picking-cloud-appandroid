@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:paddingLeft="@dimen/activity_horizontal_margin" android:paddingTop="@dimen/activity_vertical_margin" android:paddingRight="@dimen/activity_horizontal_margin" android:paddingBottom="@dimen/activity_vertical_margin" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="16sp" android:textStyle="bold" android:textColor="#ff444444" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="10dp" android:text="@string/vuoi_chiudere_questo_ordine" android:textAlignment="center">
+        </TextView>
+        <TextView android:background="@color/lightgrey2" android:layout_width="match_parent" android:layout_height="1dp" android:layout_marginBottom="20dp">
+        </TextView>
+        <android.support.design.widget.TextInputLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+            <EditText android:textSize="16sp" android:id="@id/ordine_numero_colli" android:layout_marginBottom="20dp" android:hint="@string/numero_colli" android:singleLine="true" android:textAllCaps="true" android:textAlignment="center" style="@style/EditText">
+            </EditText>
+        </android.support.design.widget.TextInputLayout>
+        <android.support.design.widget.TextInputLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+            <EditText android:textSize="16sp" android:gravity="top|start" android:id="@id/ordine_note" android:hint="@string/NOTE" android:lines="5" android:minLines="5" android:ems="10" android:inputType="textMultiLine" android:textAllCaps="false" android:textAlignment="viewStart" style="@style/EditText">
+            </EditText>
+        </android.support.design.widget.TextInputLayout>
+        <Button android:id="@id/ordine_salva" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/chiudi_ordine" android:onClick="salva" style="@style/AppTheme.Button.Primary">
+        </Button>
+    </LinearLayout>
+</ScrollView>

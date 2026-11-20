@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:icon="@drawable/ic_comment_white_24dp" android:id="@id/action_commento_ordine" android:visible="false" android:orderInCategory="1" android:title="@string/commento_interno" app:showAsAction="always">
+    </item>
+    <item android:icon="@drawable/ic_riassortito" android:id="@id/action_prodotto_riassortito" android:visible="false" android:orderInCategory="1" android:title="@string/segnala_come_riassortito" app:showAsAction="always">
+    </item>
+    <item android:icon="@drawable/ic_da_riassortire" android:id="@id/action_prodotto_da_riassortire" android:visible="false" android:orderInCategory="1" android:title="@string/segnala_riassortimento" app:showAsAction="always">
+    </item>
+    <item android:icon="@drawable/ic_check_white_24dp" android:id="@id/action_completa_ordine" android:visible="false" android:orderInCategory="100" android:title="@string/chiudi_ordine" app:showAsAction="never">
+    </item>
+    <item android:icon="@drawable/ic_info_white_24dp" android:id="@id/action_ordini_selezionati" android:visible="false" android:orderInCategory="100" android:title="Ordini Selezionati" app:showAsAction="always">
+    </item>
+</menu>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory android:title="GENERALI" android:key="pref_key_generali">
+        <SwitchPreference android:title="Tastiera virtuale" android:key="keyboard" android:summary="Abilita o disabilita la visualizzazione della tastiera virtuale nell'inserimento dei testi" android:defaultValue="false">
+        </SwitchPreference>
+    </PreferenceCategory>
+    <PreferenceCategory android:title="SINCRONIZZAZIONE" android:key="pref_key_sincronizzazione">
+        <SwitchPreference android:title="Chiusura ordine" android:key="autosync" android:summary="Alla chiusura di un ordine il sistema effettua un tentivo di sincronizzazione" android:defaultValue="false">
+        </SwitchPreference>
+    </PreferenceCategory>
+    <PreferenceCategory android:title="PICKING PRODOTTO" android:key="pref_key_picking_prodotto">
+        <SwitchPreference android:title="Incremento quantità" android:key="autoaddqty" android:summary="In fase di picking del prodotto, incrementa la quantità prelevata ogni volta che un codice corretto viene scannerizzato" android:defaultValue="false">
+        </SwitchPreference>
+        <SwitchPreference android:title="Salva e avanza" android:key="autonext" android:summary="In fase di salvataggio della quantità evasa abilita il passaggio automatico al prodotto successivo" android:defaultValue="false">
+        </SwitchPreference>
+        <SwitchPreference android:title="Suona per errore scansione" android:key="sound_on_error" android:summary="Scansionando un codice a barre errato, il dispositivo emette un suono per segnalare l'errore" android:defaultValue="false">
+        </SwitchPreference>
+    </PreferenceCategory>
+    <PreferenceCategory android:title="CHIUSURA ORDINE" android:key="pref_key_chiusura_ordine">
+        <EditTextPreference
+            android:key="max_peso_collo_warning"
+            android:title="Soglia avviso peso collo (kg)"
+            android:summary="Chiedi conferma se il peso supera 30 kg (0 o vuoto per disattivare)"
+            android:dialogTitle="Soglia avviso peso collo (kg)"
+            android:dialogMessage="Inserisci il peso in kg oltre il quale mostrare l'avviso di conferma (lascia vuoto o 0 per disattivare)"
+            android:inputType="numberDecimal"
+            android:defaultValue="30" />
+    </PreferenceCategory>
+</PreferenceScreen>
